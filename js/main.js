@@ -31,7 +31,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     
         document.getElementById('score-' + activePlayer).textContent = globalScore[activePlayer];
     
-        if (globalScore[activePlayer] >= 10) {
+        if (globalScore[activePlayer] >= 100) {
             document.getElementById('name-' + activePlayer).textContent = 'Winner';
     
             document.querySelector('.player-0-panel').classList.remove('active');
