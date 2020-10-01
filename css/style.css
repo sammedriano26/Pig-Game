@@ -1,3 +1,11 @@
+a {
+  text-decoration: none;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #333; }
+
 .buttons .btn-new, .buttons .btn-roll, .buttons .btn-hold {
   display: inline-block;
   padding: 1rem 5rem;
@@ -41,6 +49,29 @@ body {
   align-items: center;
   text-align: center;
   position: relative; }
+  .wrapper #winning-score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 4px #444;
+    border-radius: 4px;
+    padding: .25rem .75rem;
+    width: auto;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+    color: #666; }
+    .wrapper #winning-score:hover {
+      box-shadow: 0 2px 8px #333; }
+  .wrapper .btn-rules {
+    position: absolute;
+    bottom: 2%; }
 
 .player-0-panel, .player-1-panel {
   display: flex;
@@ -115,10 +146,20 @@ body {
   .buttons .btn-hold {
     top: 75%; }
 
-.dice {
+.dice1 {
   position: absolute;
-  justify-content: center;
-  align-items: center;
+  top: 28%;
+  display: block;
+  text-align: center;
+  height: 6rem;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px #979797; }
+
+.dice2 {
+  position: absolute;
+  top: 45%;
+  display: block;
   text-align: center;
   height: 6rem;
   margin: 0 auto;
@@ -152,7 +193,7 @@ body {
   z-index: 1;
   overflow: hidden;
   transform: scale(0);
-  transition: all .75s ease-in; }
+  transition: all .15s ease-in; }
   .modal-content {
     background: #01161E;
     color: #F7F7FF;
@@ -165,6 +206,12 @@ body {
     overflow: scroll; }
     .modal-content .list {
       list-style: none; }
+      .modal-content .list li {
+        line-height: 2;
+        font-size: 1.15rem;
+        color: #a7a7a7;
+        margin-bottom: 1.75rem;
+        border-bottom: 1px dotted #444; }
   .modal i {
     position: absolute;
     top: 5%;

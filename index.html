@@ -20,33 +20,22 @@
     <div class="modal">
       <div class="modal-content">
         <h3 id="main-title">Welcome to the Pig Game!</h3>
-        <p class="lead">Hi! I'm Gemini Coder!  I wish to thank you for checking my code and trying out this awesome game.  Let me show you the rules of the game.</p>
-        <ul class="list">
+        <p class="lead">Hi! I'm Gemini Coder!  I wish to thank you for checking my code and trying out this awesome game.  Let me show how this game works.</p>
+        <ol class="list">
           <div class="btn-close">
             <i class="fas fa-times-circle" id="close"></i>
-          </div>
-          <div class="box">
-            <li>This game has to be played by two players.</li>
-            <img src="./img/2Player.jpg" alt="Two Dice Image" class="display-image">
-          </div>
-          <div class="box">
-            <img src="./img/roll.jpg" alt="Rolling Image" class="display-image">
-            <li>The first player can click on the "Roll" button as many times as he like, and his scores will be added automatically under "Current Score".</li>
-          </div>
-          <div class="box">
-            <li>The scores will continue to add up unless you rolled a "1".  In which case, the score will reset to "zero" and the game continues with Player 2 now being the active player.</li>
-            <img src="./img/one.jpg" alt="Number 1" class="display-image">
-          </div>
-          <div class="box">
-            <img src="./img/click.jpg" alt="Clicking Hand" class="display-image">
-            <li>If you wish to hold your current score, simply press the "Hold" button, and your score will automatically be added to your "Global Score" located right above the "Current Score".  Doing so will change the active player status to Player 2 and vice versa.</li>
-          </div>
-          <div class="box">
-            <li>Whoever gets 100 points first on his/her Global Score wins the game.</li>
-            <img src="./img/100.jpg" alt="One Hundred" class="display-image">
-          </div>
-        </ul>
-        <p class="lead">Enjoy the game!</p>
+            <li>1. This game has to be played by two players.</li>
+            <li>2. First step is to set your "Winning Score" on the input field provided.</li>
+            <li>3. The first player can click on the "Roll" button as many times as he like, and his scores will be added automatically under "Current Score".</li>
+            <li>4.The scores will continue to add up unless you rolled a "1".  In which case, the score will reset to "zero" and the game continues with Player 2 now being the active player.</li>
+            <li>5. If you wish to hold your current score, simply press the "Hold" button, and your score will automatically be added to your "Global Score" located right above the "Current Score".  Doing so will change the active player status to Player 2 and vice versa.</li>
+          
+            <li>6. Please note though that when you roll a 6 on both dice, your Global Score will reset to zero and player 2 will become active.</li>
+            <li>7. Please note though that when you roll a 6 on both dice, your Global Score will reset to zero and player 2 will become active, vice versa.</li>
+            <li>8. The same goes when your dice total is 6 for two consecutive rolls.</li>
+            <li>9. Whoever gets the set points first on his/her Global Score wins the game.</li><br/>
+        </ol>
+        <p class="lead">I sure hope that you enjoy this game.  If you like it, please share your comment with me.  I would love to hear from you!</p>
       </div>
     </div>
     <div class="wrapper">
@@ -70,6 +59,8 @@
         </div>
       </div>
 
+      <input type="text" id="winning-score" autocomplete="off" placeholder="Enter Winning Score">
+      <div class="btn btn-rules"><a href="#">Rules of the game</a></div>
     </div>
     
     <!-- Buttons -->
@@ -83,7 +74,9 @@
       </button>
     </div>
 
-    <img src="img/dice-5.png" alt="Dice" class="dice" />
+    <img src="img/dice-5.png" alt="Dice" class="dice1" />
+    <img src="img/dice-1.png" alt="Dice" class="dice2" />
+
     <script src="js/main.js"></script>
   </body>
 </html>
