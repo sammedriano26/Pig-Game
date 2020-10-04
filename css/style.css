@@ -268,7 +268,7 @@ body {
         width: 40%;
         margin-left: auto; }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   body {
     width: 100%;
     margin: 0 auto; }
@@ -299,7 +299,7 @@ body {
     top: 3%;
     right: 8%; }
   .buttons .btn-new {
-    top: 4%; }
+    top: 8%; }
   .buttons .btn-roll {
     top: 74%; }
   .buttons .btn-hold {
