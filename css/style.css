@@ -267,3 +267,40 @@ body {
         float: right;
         width: 40%;
         margin-left: auto; }
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    margin: 0 auto; }
+  .wrapper {
+    display: block; }
+  .player-score {
+    position: relative;
+    top: -2.5%; }
+  .player-current-box {
+    position: relative;
+    top: -10%; }
+  .dice1 {
+    top: 25%;
+    left: 20%; }
+  .dice2 {
+    top: 25%;
+    left: 55%; }
+  a {
+    position: relative;
+    left: 63%; }
+  .modal-content {
+    display: block;
+    width: 90%;
+    padding: 1.5rem .5rem;
+    margin: 0 auto; }
+  .modal i {
+    position: absolute;
+    top: 3%;
+    right: 8%; }
+  .buttons .btn-new {
+    top: 8%; }
+  .buttons .btn-roll {
+    top: 74%; }
+  .buttons .btn-hold {
+    top: 82%; } }
