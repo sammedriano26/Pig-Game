@@ -65,7 +65,14 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     
         document.getElementById('score-' + activePlayer).textContent = globalScore[activePlayer];
 
-        let setNewScore = document.getElementById('winning-score').value;
+        let input = document.getElementById('winning-score').value;
+        let setNewScore;
+
+        if(input) {
+            setNewScore = input;
+        }  else {
+            setNewScore = 100;
+        }
     
         if (globalScore[activePlayer] >= setNewScore) {
             document.getElementById('name-' + activePlayer).textContent = 'Winner';
